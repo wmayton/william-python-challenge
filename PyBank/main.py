@@ -7,6 +7,3 @@ total_months = -1
 for row in open(csvpath):
     total_months += 1
 print (total_months)
-with open (csvpath) as csvfile:
-    csvreader = csv.reader(csvfile, delimiter=",")
-
