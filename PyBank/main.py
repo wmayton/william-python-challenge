@@ -7,3 +7,7 @@ total_months = -1
 for row in open(csvpath):
     total_months += 1
 print (total_months)
+
+with open(csvpath) as f:
+    rows = csv.DictReader(f)
+    print sum(float(r['1']) for r in rows)
