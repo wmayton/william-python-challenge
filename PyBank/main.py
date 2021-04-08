@@ -1,6 +1,4 @@
-# import os module
 import os
-#import module for reading CSV files
 import csv
 csvpath = os.path.join('Resources', 'PyBank.csv')
 total_months = 0
@@ -18,15 +16,15 @@ with open(csvpath) as fin:
     Values.pop(0)
     Dates.pop(0)
     t = (sum(Values) / (total_months - 1))
-    print(total_months)
-    print(min(Values))
-    print(max(Values))
     r = Values.index(min(Values))
     s = Values.index(max(Values))
-    print(Dates[r])
-    print(Dates[s])
-    print(t)
-    print (total_profit)
+    print ("Financial Analysis")
+    print ("-----------")
+    print(f"Total Months:", total_months)
+    print(f"Total:", "$",total_profit)
+    print (f"Average Change:", round(t, 2))
+    print(f"Greatest Increase in Profits:",(Dates[r]), max(Values))
+    print(f"Greatest Decrease in Profits:",(Dates[s]), min(Values))
 
 
 
