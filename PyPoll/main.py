@@ -28,13 +28,20 @@ percentage_correy = count_correy / total_votes
 percentage_li = count_li / total_votes
 percentage_otooley = count_otooley / total_votes
 
+frpct_khan = percentage_khan * 100
+frpct_correy = percentage_correy * 100
+frpct_li = percentage_li * 100
+frpct_otooley = percentage_otooley * 100
+
 print ("Election Results")
 print ("------------------------")
 print ("Total Votes:", total_votes)
 print ("------------------------")
-print ("Khan:", percentage_khan, count_khan)
-print ("Correy:", percentage_correy, count_correy)
-print ("Li:", percentage_li, count_li)
-print ("O'Tooley:", percentage_otooley, count_otooley)
-print ("-------------------------")
+print ("Khan:", (round(frpct_khan, 5), count_khan))
+print ("Correy:", (round(frpct_correy, 5), count_correy))
+print ("Li:", (round(frpct_li, 5), count_li))
+print ("O'Tooley:", (round(frpct_otooley, 5), count_otooley))
+print ("-------------")
 print ("Winner: Khan")
+
+
