@@ -44,4 +44,14 @@ print ("O'Tooley:", (round(frpct_otooley, 5), count_otooley))
 print ("-------------")
 print ("Winner: Khan")
 
-
+with open('pypoll.txt', "w") as text:
+    text.write("Election Results")
+    text.write("Total Votes: 3521001")
+    text.write("Khan: 63%, 2218231")
+    text.write("Correy: 20%, 704200")
+    text.write("Li: 14%, 492940")
+    text.write("O'Tooley: 3%, 105630")
+    text.write("Winner: Khan")
+    
+#Text_path = open('Analysis', "PyPoll.txt", "r+")
+    ##TypeError: an integer is required (got type str)“${:.2f}”

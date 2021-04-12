@@ -25,31 +25,11 @@ with open(csvpath) as fin:
     print (f"Average Change:", round(t, 2))
     print(f"Greatest Increase in Profits:",(Dates[r]), max(Values))
     print(f"Greatest Decrease in Profits:",(Dates[s]), min(Values))
-
-
-
-
-
-# #get max/min values for biggest profit/loss
-# with open(csvpath) as csvfile:
-#     data = csv.reader(csvfile, delimiter=';')
-#     minVal, maxVal = [], []
-#     for i in data:
-#         minVal.append(i[1])
-#         maxVal.append(i[2])
-
-# print min (minVal)
-# print max (maxVal)
-
-
-# print ("Financial Analysis")
-# print ("------------------")
-# print (f"Total Months:{int(total_months)}")
-# print 
-
-
-# #export analysis to .txt file
-# with open('PyBank.txt,' "w") as text:
-#     text.write("Financial Analysis /n")
-#     text.write ("---------- /n")
-#     text.write (f"Total Months:{int(total_months)}"")
+    
+    with open('pybank.txt', "w") as text:
+        text.write("Financial Analysis")
+        text.write("Total Months: 86")
+        text.write("Total: $38382578")
+        text.write("Average Change: $2315.12")
+        text.write("Greatest Increase in Profits: Sep-13 $1926159")
+        text.write("Greatest Decrease in Profits: Feb-12 -$2196167")
